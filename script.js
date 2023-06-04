@@ -1,11 +1,14 @@
 //your JS code here. If required.
 
+const expectedWidth=window.innerWidth;
+const expectedHeight=window.innerHeight;
 const sizedElement = document.createElement("h1");
-sizedElement.innerText =`Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
-
+sizedElement.innerText =`Width : ${expectedWidth} and Height: ${expectedHeight}`;
 document.body.append(sizedElement);
 
-window.onresize = function(){
-	sizedElement.innerText =`Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
 
-}
+
+
+
+
+
